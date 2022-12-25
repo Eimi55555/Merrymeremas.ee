@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background: #add8e6; /* Blue pastel color */
+        font-family: 'Cursive', sans-serif;
+        color: white;
+        text-align: center;
+      }
+      h1 {
+        font-size: 96px;
+        margin-top: 0;
+      }
+      p {
+        font-size: 36px;
+      }
+      .snowflake {
+        animation: snowflake 10s linear infinite;
+        position: absolute;
+        top: -50px;
+        left: calc(50% - 750px); /* Set the snowflake width to 1500px */
+        width: 1500px;
+        height: 1500px;
+      }
+      @keyframes snowflake {
+        0% {
+          transform: rotate(0deg);
+          top: -50px;
+        }
+        100% {
+          transform: rotate(360deg);
+          top: calc(100% + 50px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="font-family: 'Comic Sans MS', cursive;">Merry Christmas!</h1>
+    <p style="font-family: 'Comic Sans MS', cursive;">From all of us at Meredian</p>
+    <img src="snowflake1.png" alt="Snowflake" class="snowflake">
+    <img src="snowflake1.png" alt="Snowflake" class="snowflake">
+    <img src="snowflake1.png" alt="Snowflake" class="snowflake">
+    <!-- Add as many snowflakes as you like -->
+  </body>
+</html>
